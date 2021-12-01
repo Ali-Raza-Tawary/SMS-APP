@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:background="@drawable/border_line"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:src="@drawable/header"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Donator Number"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:inputType="phone"
+        android:id="@+id/DonatorNo"
+        android:background="@drawable/border_line"
+
+       />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Head Office Number"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="phone"
+        android:id="@+id/HeadNo"
+        android:background="@drawable/border_line"
+
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Enter Amount"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="phone"
+        android:id="@+id/Amount"
+        android:background="@drawable/border_line"
+
+        />
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:text="Send SMS"
+       android:textSize="15dp"
+       android:onClick="send_sms"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="@dimen/cardview_compat_inset_shadow"
+        android:gravity="center_horizontal"
+        android:layout_marginVertical="10dp"
+        android:text="Developer : Ali Raza Tawary : 0300-9217610"
+        android:textAlignment="center" />
+
+</LinearLayout>
